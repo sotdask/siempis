@@ -1,0 +1,63 @@
+.font-heading1 {
+    color: var(--dark-blue);
+    @include fonts(
+        clamp(1.75rem, 2.675vw + 1.165rem, 4.375rem),
+        500,
+        clamp(1.75rem, 2.357vw + 1.234rem, 4.063rem)
+    );
+}
+
+.font-heading2 {
+    @include fonts(
+        clamp(1.563rem, 1.274vw + 1.284rem, 2.813rem),
+        500,
+        clamp(2.25rem, 1.21vw + 1.985rem, 3.438rem)
+    );
+}
+.font-heading3 {
+    color: var(--dark-blue);
+    @include fonts(
+        clamp(1.75rem, 1.529vw + 1.416rem, 3.25rem),
+        500,
+        clamp(1.75rem, 2.038vw + 1.304rem, 3.75rem)
+    );
+}
+
+.font-heading4 {
+    @include fonts(42px, 500, 55px);
+    @media (max-width: 992px) {
+        @include fonts(28px, 500, 35px);
+    }
+}
+
+.font-heading5 {
+    @include fonts(42px, 500, 45px);
+    @media (max-width: 991px) {
+        @include fonts(20px, 500, 20px);
+    }
+}
+
+// .font-heading6 {
+//     @include fonts(clamp(1.625rem, 2.166vw + 1.151rem, 3.75rem), 500, clamp(2.25rem, 2.038vw + 1.804rem, 4.25rem));
+//     letter-spacing: clamp(0.125rem, 0.127vw + 0.097rem, 0.25rem);
+//     color: var(--black);
+// }
+
+// .move-title {
+//     position: absolute;
+//     animation: slideAnimation 5s linear infinite;
+//     text-align: center;
+//     @media (max-width: 992px) {
+//         animation: slideAnimation 2s linear infinite;
+//     }
+// }
+
+.html-content {
+    p {
+        @include fonts(18px, 400, 29px);
+        color: var(--blue);
+        @media (max-width: 992px) {
+            @include fonts(16px, 400, 26px);
+        }
+    }
+}

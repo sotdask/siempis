@@ -1,0 +1,77 @@
+.services {
+    .services-info {
+        margin-block: var(--spacing);
+        .content-wrapper {
+            margin-top: clamp(3.563rem, 0.764vw + 3.395rem, 4.313rem);
+            .services-card {
+                padding: 65px;
+                border: 1px solid rgba(212, 221, 232, 1);
+                background-color: rgba(248, 250, 253, 1);
+                @media (max-width: 767px) {
+                    padding-inline: 23px;
+                }
+                a {
+                    margin-top: 30px;
+                    padding-inline: 38px 9px;
+                    @include flex($align: center, $justify: space-between);
+                    @include sizing(90%, 61px);
+                    max-width: 372px;
+                    background-color: white;
+                    text-decoration: none;
+                    color: var(--dark-blue);
+                    transition: 0.3s ease;
+                    @include fonts(22px, 400, 24px);
+
+                    @media (max-width: 992px) {
+                        @include fonts(20px, 400, 20px);
+                        width: 100%;
+                    }
+                    @media (hover: hover) {
+                        &:hover {
+                            transform: translate(1%);
+                            color: var(--light-blue);
+                        }
+                    }
+                }
+                .row {
+                    @include flex($justify: center);
+                    .col-12 {
+                        &:first-child {
+                            h3 {
+                                max-width: 593px;
+                                color: var(--dark-blue);
+                                span {
+                                    color: var(--background-blue);
+                                }
+                            }
+                            ol {
+                                margin-top: 30px;
+                                padding-left: 1rem;
+                                li {
+                                    margin-bottom: 10px;
+                                    @include fonts(18px, 400, 29px);
+                                    color: var(--blue);
+                                    @media (max-width: 767px) {
+                                        @include fonts(16px, 400, 26px);
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                            @include flex($align: center);
+                            @media (max-width: 767px) {
+                                justify-content: center;
+                                margin-top: 35px;
+                            }
+                            @media (max-width: 575px) {
+                                img {
+                                    @include sizing(150px, 98px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

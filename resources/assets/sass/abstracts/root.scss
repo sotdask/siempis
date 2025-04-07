@@ -1,0 +1,15 @@
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 250px;
+}
+
+:root {
+  font-family: "objektiv-mk2";
+}
+
+body {
+  font-family: "objektiv-mk2";
+}
+body.no-scroll {
+  position: fixed;
+}

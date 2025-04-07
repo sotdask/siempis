@@ -1,0 +1,22 @@
+@mixin fonts($size, $weight, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin sizing($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($direction:row, $justify:flex-start, $align:flex-start) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin colors($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}

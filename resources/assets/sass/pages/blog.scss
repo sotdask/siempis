@@ -1,0 +1,70 @@
+.blog {
+    .blog-cards {
+        margin-block: var(--spacing);
+        .row {
+            gap: 70px 0;
+            .linksCol {
+                position: relative;
+                @include flex($direction: column, $align: center);
+                padding-top: clamp(4.563rem, 1.401vw + 4.256rem, 5.938rem);
+                .absoluteImageWrapper {
+                    position: absolute;
+                    top: 0;
+                    z-index: -1;
+                    @media (max-width: 575px) {
+                        @include sizing(222px, 222px);
+                    }
+                }
+                .wrapper {
+                    width: 100%;
+                    text-align: center;
+                    @include flex($direction: column, $align: center);
+                    .linksWrapper {
+                        margin-top: 58px;
+                        gap: 26px 0;
+                        text-align: center;
+                        a {
+                            text-decoration: none;
+                            @include fonts(22px, 500, 20px);
+                            color: var(--dark-blue);
+                            transition: 0.4s ease;
+                            @media (hover: hover) {
+                                &:hover {
+                                    color: var(--light-blue);
+                                }
+                            }
+                        }
+                    }
+                    .mobileLinksWrapper {
+                        margin-top: 128px;
+                        ul {
+                            padding-left: 0;
+                            list-style: none;
+                            li {
+                                margin-bottom: 20px;
+                                padding-block: 28px;
+                                background-color: #eff3f9;
+                                border: 1px solid #d4dde8;
+                                &.active {
+                                    background-color: var(--dark-blue);
+                                    a {
+                                        color: white;
+                                    }
+                                }
+                                a {
+                                    text-decoration: none;
+                                    color: var(--dark-blue);
+                                    @include fonts(16px, 400, 100%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cardCol {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

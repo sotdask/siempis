@@ -1,0 +1,96 @@
+.burger-menu {
+    position: relative;
+    .open-menu {
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+        .burger {
+            gap: 8px;
+            @include flex($direction: column, $align: center, $justify: center);
+            @include sizing(40px, 40px);
+            position: relative;
+            span {
+                display: block;
+                @include sizing(30px, 2px);
+                background: var(--dark-blue);
+                transition: 0.3s;
+            }
+        }
+    }
+    #menu {
+        overflow: auto;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        @include sizing(100vw, 100%);
+        background: linear-gradient(225deg, #ffffff 0%, #d4dce7 100%);
+        transition: right 0.3s ease-in-out;
+        padding-top: 60px;
+        @include flex($direction: column, $align: center);
+        .absoluteImageWrapper {
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        li {
+            padding: 20px;
+            text-align: center;
+            a {
+                color: var(--dark-blue);
+                @include fonts(28px, 400, 28px);
+                text-decoration: none;
+            }
+            .wrapper {
+                margin-top: 50px;
+                display: flex;
+                gap: 32px;
+                a {
+                    color: white !important;
+                    @include fonts(16px, 400, 17px);
+                }
+            }
+            .langWrapper {
+                gap: 21.5px;
+                a {
+                    @include fonts(19px, 500, 19px);
+                    &.active {
+                        color: #829CBE;
+                    }
+                }
+                span {
+                    color: #829CBE;
+                }
+            }
+            .list-group {
+                li {
+                    background-color: transparent;
+                    border: none;
+                    padding: 7px 0;
+                    a {
+                        @include fonts(16px, 400, 16px);
+                    }
+                }
+            }
+        }
+    }
+}
+.menu-open {
+    .burger {
+        span:nth-child(1) {
+            transform: translateY(11px) rotate(45deg);
+        }
+        span:nth-child(2) {
+            opacity: 0;
+        }
+        span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+    }
+    #menu {
+        right: 0;
+    }
+}

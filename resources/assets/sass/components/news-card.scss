@@ -1,0 +1,50 @@
+.newsCard {
+    border: 1px solid #D4DDE8;
+    padding: 35px 41px;
+    transition: 0.4s ease;
+    @media (max-width: 575px) {
+        padding: 35px 25px;
+    }
+    @media (hover: hover) {
+        &:hover {
+            opacity: 80%;
+            background-color: #eff3f9;
+        }
+    }
+    .card-title {
+        a {
+            text-decoration: none;
+            color: var(--dark-blue);
+            @include fonts(22px, 400, 30px);
+            @media (max-width: 991px) {
+                @include fonts(20px, 400, 30px);
+            }
+        }
+    }
+    .card-body {
+        margin-top: clamp(3.375rem, 6.624vw + 1.926rem, 9.875rem);
+        @include flex($justify: space-between);
+
+        .wrapper {
+            @include flex($direction: column);
+            .title {
+                @include fonts(18px, 400, 17px);
+                color: var(--blue);
+            }
+            .date {
+                @include fonts(13px, 400, 16px);
+                color: #C2CEDD;
+                display: flex;
+                margin-top: 8px;
+            }
+        }
+        .btn {
+            transition: 0.4s ease;
+            @media (hover:hover) {
+                &:hover {
+                    transform: translate(10px);
+                }
+            }
+        }
+    }
+}

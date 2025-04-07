@@ -1,0 +1,99 @@
+footer {
+    background-color: rgba(248, 250, 253, 1);
+    padding-block: 84px 34px;
+    @media (max-width:992px) {
+        padding-block: 74px 71.5px;
+    }
+    .footer-wrapper {
+        .logo {
+            @media (max-width:575px) {
+                @include sizing(248px, 35px);
+            }
+        }
+        @include flex ($direction: column, $align: center);
+        .contact-details {
+            margin-top: 70px;
+            .row {
+                @include flex($justify: center);
+                gap: 50px 0;
+                .col-12 {
+                    @include flex($direction: column, $align:center);
+                    gap: 20px 0;
+                    text-align: center;
+                    span {
+                        @include fonts(18px, 400, 20px);
+                        color: var(--light-blue);
+                    }
+                    a {
+                        text-decoration: none;
+                        @include fonts(20px, 400, 24px);
+                        color: var(--dark-blue);
+                        transition: 0.4s ease;
+                        @media (hover:hover) {
+                            &:hover {
+                                color: var(--light-blue);
+                            }
+                        }
+                        @media (max-width:992px) {
+                            @include fonts(18px, 400, 24px);
+                        }
+                    }
+                }
+            }
+        }
+        ul {
+            margin-top: 58px;
+            list-style: none;
+            display: flex;
+            gap: 44.44px;
+            @media (max-width:992px) {
+                margin-top: 70px;
+            }
+            li {
+                a {
+                    img {
+                        transition: 0.4s ease;
+                        @media (hover:hover) {
+                            &:hover {
+                                transform: scale(130%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-side {
+            margin-top: 58px;
+            .row {
+                gap: 22px 0;
+            }
+            span {
+                color: var(--dark-blue);
+                @include fonts (13px, 400, 13px);
+            }
+            a {
+                @include fonts (13px, 400, 13px);
+                text-decoration: none;
+                color: var(--dark-blue);
+                transition: 0.4s ease;
+                @media (hover:hover) {
+                    &:hover {
+                        color: var(--light-blue);
+                    }
+                }
+            }
+            .wrapper {
+                @include flex($justify: center);
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+            .col-12 {
+                @include flex($justify: center);
+            }
+            .heart {
+                display: inline-block;
+                animation: heartbeat 1s infinite ease-in-out;
+            }
+        }
+    }
+}

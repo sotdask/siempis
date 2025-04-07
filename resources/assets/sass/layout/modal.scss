@@ -1,0 +1,46 @@
+.modal-dialog {
+    z-index: 100;
+    max-width: 1213px;
+    .modal-content {
+        .absoluteImageWrapper {
+            position: absolute;
+        }
+        .absoluteImageWrapper2 {
+            position: absolute;
+            right: -40px;
+            top: -60px;
+            button {
+                border: none;
+                background-color: transparent;
+            }
+        }
+        .ImageWrapper {
+            margin-right: -30px;
+            button {
+                border: none;
+                background-color: transparent;
+            }
+        }
+        h1 {
+            @include fonts(
+                clamp(1.75rem, 4.867vw + 0.685rem, 4.375rem),
+                500,
+                clamp(2.375rem, 4.867vw + 1.31rem, 5rem)
+            );
+            color: var(--dark-blue);
+            margin-bottom: 25px;
+        }
+        background: linear-gradient(225deg, #ffffff 0%, #d4dce7 100%);
+        padding: clamp(1.875rem, 6.051vw + 0.551rem, 7.813rem);
+        form {
+            width: 100%;
+            .form-check {
+                justify-content: flex-start !important;
+                margin-top: 31px;
+            }
+            .submit-content {
+                justify-content: flex-end;
+            }
+        }
+    }
+}

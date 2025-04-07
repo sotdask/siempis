@@ -1,0 +1,19 @@
+.booking {
+    .content-wrapper {
+        padding-block: 81px 93px;
+        background-color: var(--background-blue);
+        @include flex($direction: column, $align: center);
+        margin-bottom: var(--spacing);
+        text-align: center;
+        p {
+            display: flex;
+            max-width: 805px;
+            margin-block: 15px 35px;
+            padding-inline: 24px;
+        }
+        .wrapper {
+            display: flex;
+            gap: 0 32px;
+        }
+    }
+}

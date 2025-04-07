@@ -1,0 +1,157 @@
+.office {
+    .office-info {
+        margin-block: var(--spacing);
+        .row {
+            gap: 43px 0;
+            justify-content: center;
+            .col-12:first-child {
+                @include flex($direction: column, $justify: center);
+                @media (max-width: 991px) {
+                    order: 2;
+                    align-items: center;
+                }
+                .wrapper {
+                    max-width: 539px;
+                    h1 {
+                        color: var(--dark-blue);
+                        margin-bottom: 34px;
+                        @media (max-width: 991px) {
+                            display: none;
+                        }
+                    }
+                }
+                .linkWrapper {
+                    width: 100%;
+                    margin-top: 49px;
+                    @include flex($align: center);
+                    gap: 25px;
+                    @media (max-width: 767px) {
+                        flex-direction: column;
+                    }
+                    .main-button {
+                        @media (max-width: 575px) {
+                            width: 100%;
+                        }
+                    }
+                    .contact-link {
+                        color: var(--dark-blue);
+                        @include fonts(16px, 400, 17px);
+                        text-underline-offset: 4px;
+                        transition: 0.4s ease;
+                        @media (hover: hover) {
+                            &:hover {
+                                color: var(--light-blue);
+                            }
+                        }
+                    }
+                }
+            }
+            .col-12:last-child {
+                @media (max-width: 991px) {
+                    order: 1;
+                }
+                h1 {
+                    text-align: center;
+                    color: var(--dark-blue);
+                    display: none;
+                    margin-bottom: 27px;
+                    @media (max-width: 991px) {
+                        display: block;
+                    }
+                }
+                .swiper {
+                    @include sizing(100%, 100%);
+                    max-width: 589px;
+                    max-height: 710px;
+                    @media (max-width: 575px) {
+                        max-width: 350px;
+                        max-height: 421px;
+                    }
+                    .swiper-pagination {
+                        .swiper-pagination-bullet {
+                            border: 1px solid #D4DDE8;
+                        }
+                        .swiper-pagination-bullet-active {
+                            background: #D4DDE8;
+                        }
+                    }
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        @include flex($justify:center, $align:center);
+                        img {
+                            display: block;
+                            @include sizing(100%, 100%);
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .video {
+        margin-bottom: var(--spacing);
+        .ratio {
+            @media (max-width: 575px) {
+                --bs-aspect-ratio: 130.25%;
+            }
+        }
+    }
+    .location {
+        background-color: #d4dde8;
+        .container {
+            padding-block: 111px 85px;
+            .row {
+                gap: 40px 0;
+                .col-12:first-child {
+                    color: var(--dark-blue);
+                    @media (max-width: 992px) {
+                        text-align: center;
+                    }
+                }
+                .col-12:last-child {
+                    @include flex($direction: column);
+                    gap: 30px 0;
+                    @media (max-width: 992px) {
+                        gap: 25px 0;
+                    }
+                    .wrapper {
+                        display: flex;
+                        img {
+                            margin-right: 25px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: var(--dark-blue);
+                            @include fonts(17px, 400, 20px);
+                            transition: 0.4s ease;
+                            @media (hover: hover) {
+                                &:hover {
+                                    color: var(--light-blue);
+                                }
+                            }
+                            @media (max-width: 992px) {
+                                @include fonts(16px, 400, 26px);
+                            }
+                        }
+                        span {
+                            color: var(--dark-blue);
+                            @include fonts(17px, 400, 20px);
+                            @media (max-width: 992px) {
+                                @include fonts(16px, 400, 26px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .map-wrapper {
+            margin-top: 100px;
+            img {
+                min-height: 370px;
+                object-fit: cover;
+            }
+        }
+    }
+}

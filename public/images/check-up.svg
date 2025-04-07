@@ -1,0 +1,39 @@
+<svg width="200" height="262" viewBox="0 0 200 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 27">
+<g id="Rectangle">
+<mask id="path-1-inside-1_0_1290" fill="white">
+<rect width="200" height="262" rx="1"/>
+</mask>
+<rect width="200" height="262" rx="1" stroke="#BFC3CA" stroke-width="10" mask="url(#path-1-inside-1_0_1290)"/>
+</g>
+<g id="Group 24">
+<g id="Group 20 Copy">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M100.5 26C131.883 26 158.173 54.9581 165.483 63.8311C167.506 66.2442 167.506 69.756 165.483 72.1692C158.173 81.0421 131.883 110 100.5 110C69.1169 110 42.8269 81.0421 35.5174 72.1692C33.4942 69.756 33.4942 66.2442 35.5174 63.8311C42.8269 54.9581 69.1169 26 100.5 26ZM100.5 105.579C129.939 105.579 155.061 77.8569 162.058 69.3573V69.3619C162.721 68.5745 162.721 67.4259 162.058 66.6386C155.061 58.1436 129.939 30.4213 100.5 30.4213C71.0606 30.4213 45.9387 58.1436 38.9417 66.6386C38.2789 67.4259 38.2789 68.5745 38.9417 69.3619C45.9387 77.8569 71.0606 105.579 100.5 105.579Z" fill="#BFC3CA"/>
+<path id="Shape_1_" fill-rule="evenodd" clip-rule="evenodd" d="M67 68.5C67 49.9984 81.9984 35 100.5 35C118.993 35.0209 133.979 50.0072 134 68.5C134 87.0016 119.002 102 100.5 102C81.9984 102 67 87.0016 67 68.5ZM71.4667 68.5C71.4667 84.5346 84.4653 97.5333 100.5 97.5333C116.527 97.5148 129.515 84.5269 129.533 68.5C129.533 52.4653 116.535 39.4667 100.5 39.4667C84.4653 39.4667 71.4667 52.4653 71.4667 68.5Z" fill="#BFC3CA"/>
+<path id="Shape_2_" fill-rule="evenodd" clip-rule="evenodd" d="M87 68.5C87 61.0441 93.0441 55 100.5 55C107.953 55.0073 113.993 61.0472 114 68.5C114 75.9557 107.956 82 100.5 82C93.0443 82 87 75.9559 87 68.5ZM91.4999 68.5C91.4999 73.4708 95.5295 77.5001 100.5 77.5001C105.471 77.5001 109.5 73.4708 109.5 68.5C109.5 63.5292 105.471 59.4999 100.5 59.4999C95.5292 59.4999 91.4999 63.5292 91.4999 68.5Z" fill="#BFC3CA"/>
+</g>
+<g id="Group 22">
+<g id="Group 21">
+<g id="Rectangle_2">
+<mask id="path-5-inside-2_0_1290" fill="white">
+<rect x="26" y="137" width="36" height="36" rx="1"/>
+</mask>
+<rect x="26" y="137" width="36" height="36" rx="1" stroke="#BFC3CA" stroke-width="10" mask="url(#path-5-inside-2_0_1290)"/>
+</g>
+<g id="Rectangle Copy">
+<mask id="path-6-inside-3_0_1290" fill="white">
+<rect x="26" y="189" width="36" height="36" rx="1"/>
+</mask>
+<rect x="26" y="189" width="36" height="36" rx="1" stroke="#BFC3CA" stroke-width="10" mask="url(#path-6-inside-3_0_1290)"/>
+</g>
+</g>
+<g id="Group 18">
+<path id="Line" d="M78.5 140.5H174.5" stroke="#BFC3CA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line Copy" d="M78.5 167.5H174.5" stroke="#BFC3CA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line Copy 2" d="M78.5 194.5H174.5" stroke="#BFC3CA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line Copy 3" d="M78.5 221.5H174.5" stroke="#BFC3CA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

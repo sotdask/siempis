@@ -1,0 +1,79 @@
+.contact {
+    .form-container {
+        margin-block: var(--spacing);
+        @include flex($direction: column, $align: center);
+        p {
+            max-width: 551px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        #confirmationMessage {
+            @include flex($direction: column, $align: center, $justify: center);
+            margin-top: 46.5px;
+            p {
+                @include fonts(26px, 300, 26px);
+                color: var(--dark-blue);
+            }
+        }
+        .form-wrapper {
+            @include flex($justify: center);
+            margin-top: 46.5px;
+        }
+    }
+    .location {
+        background-color: #D4DDE8;
+        .container {
+            padding-block: 111px 85px;
+            .row {
+                gap: 40px 0;
+                .col-12:first-child {
+                    color: var(--dark-blue);
+                    @media (max-width: 992px) {
+                        text-align: center;
+                    }
+                }
+                .col-12:last-child {
+                    @include flex($direction: column);
+                    gap: 30px 0;
+                    @media (max-width: 992px) {
+                        gap: 25px 0;
+                    }
+                    .wrapper {
+                        display: flex;
+                        img {
+                            margin-right: 25px;                        }
+                        a {
+                            text-decoration: none;
+                            color: var(--dark-blue);
+                            @include fonts(17px, 400, 20px);
+                            transition: 0.4s ease;
+                            @media (hover:hover) {
+                                &:hover {
+                                    color: var(--light-blue);
+                                }
+                            }
+                            @media (max-width: 992px) {
+                                @include fonts(16px, 400, 26px);
+                            }
+                        }
+                        span {
+                            color: var(--dark-blue);
+                            @include fonts(17px, 400, 20px);
+                            @media (max-width: 992px) {
+                                @include fonts(16px, 400, 26px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .map-wrapper {
+            @include flex($justify: center);
+            margin-top: 100px;
+            img {
+                min-height: 370px;
+                object-fit: cover;
+            }
+        }
+    }
+}

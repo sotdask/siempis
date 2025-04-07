@@ -1,0 +1,18 @@
+:root {
+    --dark-blue: #002F6D;
+    --blue: #48576C;
+    --light-blue: #829CBE;
+    --background-blue: #D4DDE8;
+    --spacing: clamp(5rem, 2.548vw + 4.443rem, 7.5rem);
+    --title-spacing: clamp(4.063rem, 0.701vw + 3.909rem, 4.75rem);
+}
+
+header {
+    position: sticky;
+    z-index: 100000;
+    top: 0;
+}
+
+.container {
+    max-width: 1500px;
+}

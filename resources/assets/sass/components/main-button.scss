@@ -1,0 +1,14 @@
+.main-button {
+    @include colors(white, var(--dark-blue));
+    @include sizing(201px, 54px);
+    @include flex($align: center, $justify: center);
+    @include fonts(16px, 400, 17px);
+    text-decoration: none;
+    transition: 0.4s ease;
+    @media (hover: hover) {
+        &:hover {
+            @include colors(var(--dark-blue), transparent);
+            border: 1px solid var(--dark-blue);
+        }
+    }
+}
